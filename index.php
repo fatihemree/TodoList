@@ -2,33 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Todo</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
 	
 	<div class="container">
+			<form>
 		<div class="row my-5 d-flex align-items-start">
 
-			<div class="col-3"><div class="input-group input-group-sm mb-3">
-				<div class="input-group-prepend">
-					<span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+				<div class="col-3"><div class="input-group input-group-sm mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+					</div>
+					<input name="userId" type="text" class="form-control name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 				</div>
-				<input type="text" class="form-control name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 			</div>
-		</div>
 
-		<div class="col-3">
-			
-			<div class="form-check">
-  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Completed
-  </label>
+			<div class="col-3">
+
+				<div class="custom-control custom-switch">
+  <input type="checkbox" name="completed" class="custom-control-input check" value="false" id="customSwitch1">
+  <label class="custom-control-label" for="customSwitch1">Completed</label>
 </div>
-
-		</div>	
+			</div>	
+		</form>
 
 	</div>
 
