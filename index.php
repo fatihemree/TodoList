@@ -23,8 +23,15 @@
 			<div class="col-3">
 
 				<div class="custom-control custom-switch">
-  <input type="checkbox" name="completed" class="custom-control-input check" value="false" id="customSwitch1">
+  <input type="checkbox" name="completed" class="custom-control-input check" value="true" id="customSwitch1">
   <label class="custom-control-label" for="customSwitch1">Completed</label>
+</div>
+			</div>	
+			<div class="col-3">
+
+				<div class="custom-control custom-switch">
+  <input type="checkbox" name="all" class="custom-control-input checkAll" value="true" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">All</label>
 </div>
 			</div>	
 		</form>
