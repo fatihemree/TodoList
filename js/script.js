@@ -3,31 +3,28 @@
 $(document).ready(function(){
 
 	var txt,check,checkAll;
+	$(".name").click(function(){
+		if(checkAll==true)
+			$(".checkAll").click();
 
+	});
 	$(".name").keyup(function(check){
 
 		txt = $(".name").val();
 		filter($(".check").prop( "checked" ),txt,$(".checkAll").prop( "checked" ));
 	});
 
-	$(".check").change(function(){
 
+	$(".check").change(function(){
 		check= $(this).prop( "checked" );
-		
 		filter(check,txt,$(".checkAll").prop( "checked" ));
-		
 	});
 	$(".checkAll").change(function(){
-
 		checkAll= $(this).prop( "checked" );
-		
 		filter(check,txt,checkAll);
-		
 	});
-	
 
 	function filter(check,name,all){
-		
 		
 		if(all==true)
 		{ 
